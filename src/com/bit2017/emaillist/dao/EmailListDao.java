@@ -29,7 +29,7 @@ public class EmailListDao {
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 			
 			//3. SQL문 실행
-			String sql = "select no, first_name, last_name, email from emaillist order by no";
+			String sql = "select no, first_name, last_name, email from emaillist order by no desc";
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
 			
